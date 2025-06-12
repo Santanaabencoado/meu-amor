@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ffe0ec, #fcd7fa);
+  color: #4e0034;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 192, 203, 0.3);
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #b3005e;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.moment {
+  background-color: #ffffffd9;
+  border-left: 5px solid #ff99bb;
+  margin: 30px 0;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(255, 0, 102, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.moment img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.moment h2 {
+  margin-top: 0;
+  color: #a8005c;
+  font-family: 'Dancing Script', cursive;
+}
+
+.moment p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.date {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #999;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #ffedf3;
+  color: #b3005e;
+}
+
+/* Carta final */
+.carta {
+  text-align: center;
+}
+
+.carta button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Poppins';
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.carta button:hover {
+  background-color: #e60073;
+}
+
+.mensagem {
+  margin-top: 20px;
+  display: none;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+}
+
+/* Corações Flutuando */
+.hearts {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  font-size: 3rem;
+  color: #ff69b4;
+  animation: flutuarCoracao 10s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes flutuarCoracao {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20vh) scale(1.5);
+    opacity: 0;
+  }
+}
+.musica-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#toggleMusica {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+#toggleMusica:hover {
+  background-color: #e055a1;
+}
